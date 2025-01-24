@@ -12,21 +12,15 @@ public class Supermarket {
         this.strawberry = new Fruit("草莓", 13.0f);
         this.mango = new Fruit("芒果", 20.0f);
     }
-
-    public Supermarket(Fruit apple) {
-        this.apple = apple;
-        this.strawberry = new Fruit("草莓", 13.0f);
-        this.mango = new Fruit("芒果", 20.0f);
-    }
-
-
+    
     /**
      * 计算购买水果的总价
-     * @param appleWeight 苹果的斤数
+     *
+     * @param appleWeight      苹果的斤数
      * @param strawberryWeight 草莓的斤数
-     * @param mangoWeight 芒果的斤数
-     * @param discount 是否应用草莓折扣
-     * @param bulkDiscount 是否应用满减优惠
+     * @param mangoWeight      芒果的斤数
+     * @param discount         是否应用草莓折扣
+     * @param bulkDiscount     是否应用满减优惠
      * @return 总价
      */
     public double calculateTotalPrice(int appleWeight, int strawberryWeight, int mangoWeight, boolean discount, boolean bulkDiscount) {
